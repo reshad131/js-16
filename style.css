@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#notificationContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}
+
+.notification {
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.notification.hidden {
+    opacity: 0;
+}
